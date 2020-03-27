@@ -1,9 +1,9 @@
-from fastapi import FastAPI
 import pickle
+from fastapi import FastAPI
 from sklearn.ensemble import RandomForestClassifier
 
 # Load Prediction Model
-with open('trained_model/trained_model.plk','rb') as f:
+with open('trained_model.plk','rb') as f:
     model = pickle.load(f)
 
 app = FastAPI()
