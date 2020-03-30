@@ -11,7 +11,6 @@ app = FastAPI()
 async def main():
     return 'Deploy Model Tutorial'
 
-
 @app.get("/predict")
 async def create_item(alcohol:float,
                         malic_acid:float,
